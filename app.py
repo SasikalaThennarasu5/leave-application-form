@@ -25,9 +25,6 @@ class LeaveApplicationForm(FlaskForm):
             return False
         return True
 
-@app.route("/")
-def home():
-    return redirect(url_for("leave_application"))
 
 @app.route("/", methods=["GET", "POST"])
 def leave_application():
